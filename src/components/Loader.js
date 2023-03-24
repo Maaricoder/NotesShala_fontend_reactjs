@@ -1,0 +1,22 @@
+import React, { Component } from 'react';
+import { Blocks } from 'react-loader-spinner';
+
+class Loader extends Component {
+    render() {
+        return (
+            <div className='flex justify-center  h-screen'>
+                <Blocks
+                    visible={true}
+                    height="80"
+                    width="80"
+                    ariaLabel="blocks-loading"
+                    wrapperStyle={{}}
+                    wrapperClass="blocks-wrapper"
+                />
+
+            </div>
+        );
+    }
+}
+
+export default Loader;
